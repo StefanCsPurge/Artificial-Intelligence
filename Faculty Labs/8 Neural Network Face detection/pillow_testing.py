@@ -15,21 +15,22 @@ myImage.show()
 
 # load and display an image with Matplotlib
 # load image as pixel array
-data = image.imread('f1.jpg')
+#data = image.imread('f1.jpg')
 # summarize shape of the pixel array
-print(data.dtype)
-print(data.shape)
+#print(data.dtype)
+#print(data.shape)
 # display the array of pixels as an image
-pyplot.imshow(data)
-pyplot.show()
+#pyplot.imshow(data)
+#pyplot.show()
 
 
 # create a thumbnail of an image
 # load the image
-image = Image.open('f1.jpg')
+img = Image.open('f1.jpg')
 # report the size of the image
-print(image.size)
+print(img.size)
 # create a thumbnail and preserve aspect ratio
-image.thumbnail((100,100))
+img.thumbnail((222,222))
+img.show()
 # report the size of the thumbnail
-print(image.size)
+print(img.size)
